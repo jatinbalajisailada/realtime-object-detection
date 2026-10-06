@@ -33,8 +33,8 @@ This engine is specifically engineered to be highly portable, testing the limits
 
 **Current CPU-Only Benchmarks:**
 * **Hardware:** Standard Laptop CPU (Power-saving microarchitecture, no dedicated GPU utilization).
-* **Model Pipeline:** YOLO INT8 Quantized.
-* **Average Latency:** ~190ms – ~300ms (~3.33 to ~5.5 FPS).
+* **Model Pipeline:** YOLO INT8 Quantized. (9.48 MB to 2.77 MB)
+* **Average Latency:** ~170ms – ~300ms (~3.33 to ~5.882 FPS).
 
 **Architecture Notes:**
 The current latency is a direct reflection of physical hardware constraints, not software bloat. The surrounding Python/NumPy pipeline (BGR to RGB conversion, array scaling, matrix formatting, and OpenCV HUD rendering) executes in under **5 milliseconds**. 
